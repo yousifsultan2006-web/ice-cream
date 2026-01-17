@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>Ice Cream Order Form</h1>
+        </header>
+        <form id = "icecream-order-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for = "name"> Name:</label>
+                <input type = "text" id = "name" name = "name" required>
+                <br>
+                <label for = "email"> email</label>
+                <input type = "text" id = "email" name = "email" required>
+                <br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Order Details</legend>
+                <img src="imgs/images.jpeg" alt="icecream">
+                <label for = "flavor"> choose your flavor:</label>
+                <select id = "flavor" name = "flavor" required>
+                    <option value = "">Select a flavor</option>
+                    <option value = "vanilla">vanilla</option>
+                    <option value = "chocolate">chocolate</option>
+                    <option value = "strawberry">strawberry</option>
+                    <option value = "pistachio"> pistachio</option>
+
+                </select>
+                <br>
+                <h2>Choose your cone:</h2>
+                <label for ="Waffle-Cone"><input type = "radio" id="Waffle-Cone" name = "cone">Waffle Cone</label>
+                <label for ="SugarCone"><input type = "radio" id="SugarCone" name = "cone">Sugar Cone</label>
+                <label for ="Cup"><input type = "radio" id="Cup" name = "cone">Cup</label>
+                <br>
+                <br>
+                <h2>Choose your toppings:</h2>
+                <label for ="Sprinkles"><input type = "checkbox" id="Sprinkles" name = "toppings">Sprinkles</label>
+                <label for ="Nuts"><input type = "checkbox" id="Nuts" name = "toppings">Nuts</label>
+                <label for ="Cherry"><input type = "checkbox" id="Cherry" name = "toppings">Cherry</label>
+                <label for ="WhippedCream"><input type = "checkbox" id="WhippedCream" name = "toppings">Whipped Cream</label>
+                <br>
+                <label for ="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </fieldset>
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+    
+</body>
+</html>
